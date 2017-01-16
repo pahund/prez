@@ -1,22 +1,21 @@
 {
-  "name": "reveal.js",
-  "version": "3.4.0",
-  "description": "The HTML Presentation Framework",
-  "homepage": "http://lab.hakim.se/reveal-js",
-  "subdomain": "revealjs",
-  "main": "js/reveal.js",
+  "name": "prez-beuth2017",
+  "version": "1.0.0",
+  "description": "Modernisierung einer Legacy-Plattform mit Node.js und React",
+  "main": "index.js",
   "scripts": {
     "test": "grunt test",
-    "start": "grunt serve"
+    "start": "grunt serve",
+    "start-notes": "node plugin/notes-server"
   },
   "author": {
-    "name": "Hakim El Hattab",
-    "email": "hakim.elhattab@gmail.com",
-    "web": "http://hakim.se"
+    "name": "Patrick Hund",
+    "email": "pahund@team.mobile.de",
+    "web": "https://about.me/wiekatz"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hakimel/reveal.js.git"
+    "url": "git://github.com/pahund/prez-beuth2017.git"
   },
   "engines": {
     "node": ">=4.0.0"
