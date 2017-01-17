@@ -31,9 +31,11 @@
                     <h2>Modernisierung einer Legacy-Plattform mit Node.js und React</h2>
                     <p>Beuth Hochschule für Technik Berlin, WS 2016/2017</p>
                 </section>
+
                 <section data-background="url(images/titel.png) no-repeat center/contain"></section>
+
                 <section>
-                    <h1><a href="https://de.wikipedia.org/wiki/Altsystem">Legacy</a></h1>
+                    <h2><a target="_blank" href="https://de.wikipedia.org/wiki/Altsystem">Legacy</a></h2>
                     <aside class="notes">
                         <ul>
                             <li>Englisch für “Altlast”</li>
@@ -43,26 +45,118 @@
                         </ul>
                     </aside>
                 </section>
+
                 <section>
-                    <h1><a href="https://de.wikipedia.org/wiki/Technische_Schulden">Technische Schulden</a></h1>
+                    <h2><a target="_blank" href="https://de.wikipedia.org/wiki/Technische_Schulden">Technische Schulden</a></h2>
                     <aside class="notes">
                         <p>Ursachen:</p>
                         <ul>
                             <li>Druck, schnell fertig zu werden mit Entwicklung</li>
                             <li>Mangelnde Qualitätssicherung</li>
+                            <li>keine automatisierten Test</li>
                             <li>Steigende Komplexität der Software</li>
-                            <li>Halb fertige Umsetzung von Refactoring, Einführung neuer Technologie</li>
+                            <li>Halbherzige Umsetzung von Refactoring, Einführung neuer Technologien</li>
                         </ul>
                     </aside>
                 </section>
+
                 <section data-background="url(images/2001-space-odyssey-monolith.jpg) no-repeat center/cover"></section>
+
                 <section>
-                    <h1><a href="https://de.wikipedia.org/wiki/Serviceorientierte_Architektur">Serviceorientierte Architektur</a> (SOA)</h1>
+                    <h2><a target="_blank" href="https://de.wikipedia.org/wiki/Serviceorientierte_Architektur">Serviceorientierte Architektur</a> (SOA)</h2>
                 </section>
+
+                <section data-background="url(images/plan-h-architecture.png) no-repeat center/contain">
+                    <aside class="notes">
+                        <ul>
+                            <li>Modernisierung der mobile.de-Plattform seit 2013</li>
+                            <li>Lose Koppelung von Webapps und Services</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section data-background="url(images/motorlith.png) no-repeat center/cover">
+                    <div class="right-half">
+                        <ul>
+                            <li>Diskussionsforen</li>
+                            <li>Nachrichten</li>
+                            <li>Blogs</li>
+                            <li>Partnerseiten</li>
+                            <li>Private Nachrichten</li>
+                            <li>Administration</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section data-background="url(images/load-balancing-polly.png) no-repeat center/contain"></section>
+
+                <section>
+                    <h3>Node.js + React:</h3>
+                    <h2>Universal JavaScript</h2>
+                    <aside class="notes">
+                        <ul>
+                            <li>selbe Sprache im Backend und Frontend</li>
+                            <li>Styling, markup und Logik gekapselt in Komponenten</li>
+                            <li>kein langes Warten auf Build wie bei Java, schnelle, einfache Entwicklung</li>
+                            <li>reiches Ökosystem an Open Source-Modulen</li>
+                        </ul>
+                        <p>DEMO: hot-module-reloading-demo</p>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Module und Komponenten</h2>
+                    <p>Beispiel: <a target="_blank" href="https://pages.github.corp.ebay.com/mobile-de/mde-styleguide/">mobile.de Styleguide</a></p>
+                    <aside class="notes">
+                        <ul>
+                            <li>Component Age</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Von Open Source lernen</h2>
+                    <p>Beispiel <a target="_blank" href="https://sources.motortalk.biz/projects/COS/repos/noober">Noober</a></p>
+                    <aside class="notes">
+                        <ul>
+                            <li>möglichst kleine, wiederverwendbare Einheiten</li>
+                            <li>ausführliches Readme</li>
+                            <li>Dokumentation durch tests</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Skalierbare React-Anwendungen</h2>
+                    <p>Beispiel <a target="_blank" href="https://sources.motortalk.biz/projects/COS/repos/survey-modal">Exit Survey</a></p>
+                    <aside class="notes">
+                        <p>Am Beispiel survey-modal</p>
+                        <ul>
+                            <li>Kapselung von Komponenten mit Layout</li>
+                            <li>Trennung von Container und Komponente mit Recompose</li>
+                            <li>State-Management mit Redux</li>
+                            <li>Unit-Test, Demo mit Wallaby</li>
+                            <li>Coverage Report zeigen</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Performante und ausfallsichere Web-Anwendungen mit Node.js und Express</h2>
+                    <p>Beispiel <a target="_blank" href="https://github.corp.ebay.com/mobile-de/public-home-germany-node">mobile.de Homepage</a></p>
+                    <p>Modul <a target="_blank" href="https://github.corp.ebay.com/mobile-de/mde-node-defensive-request">mde-node-defensive-request</a></p>
+                    <ul>
+                        <li>Caching</li>
+                        <li>Circuit Breaker</li>
+                        <li>DNS Resolver</li>
+                    </ul>
+                </section>
+
+
                 <section data-background="url(images/hintergrund-mit-visitenkarte.png) no-repeat center/contain">
-                    <h1>Danke! Fragen?</h1>
+                    <h1>Danke!</h1>
                     <p>
-                        Präsentation online: <br>
+                        Präsentation online:<br>
                         <a href="http://pahund.github.io/prez-beuth2017">pahund.github.io/prez-beuth2017</a>
                         <br><br>
                     </p>
